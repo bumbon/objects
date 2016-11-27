@@ -26,7 +26,7 @@ var myMusic = [
 
 
 function selProp() {
-    
+ // clearing   
 	var myNode = document.getElementById('catalP');
     var fc = myNode.firstChild;
     while( fc ) {
@@ -52,6 +52,14 @@ function selProp() {
 
 // -----------------
 artist.onclick = function() {
+    // clearing   
+	var myNode = document.getElementById('catalP');
+    var fc = myNode.firstChild;
+    while( fc ) {
+    myNode.removeChild( fc );
+    fc = myNode.firstChild;
+     }
+    
   var x = +document.getElementById("art").innerHTML;
   
   for (var i in myMusic[x]) {
