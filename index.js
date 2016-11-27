@@ -34,10 +34,10 @@ myDog_.onclick = function() {
   
   //prop.parentNode.removeChild(arr);
   for (var i in myDog) {
-            console.log("myDog." + i + " = " + myDog[i]);
+            console.log(i + " = " + myDog[i]);
                  var arr = document.createElement('p');
              
-                 arr.innerHTML = "myDog." + i + " = " + myDog[i]+'<br>';
+                 arr.innerHTML = i + "  -  " + myDog[i]+'<br>';
                  show.appendChild(arr);
                  }
             
