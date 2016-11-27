@@ -17,7 +17,7 @@ var myDog = {
 var nameOurDog = ourDog.name;     
 var nameMyDog = myDog.name;
 
-var drinkValue = myDog["the drink"]; 
+var drinkValue = myDog["drink"]; 
 
 //alert(nameOurDog+" and "+nameMyDog +" drink "+drinkValue);
 //an example of using a variable to access a property
