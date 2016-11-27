@@ -77,5 +77,5 @@ var ourStorage = {
   }
 };
 var cab = ourStorage.cabinet["top drawer"].folder2;  // "secrets"
-alert(cab);
+//alert(cab);
 ourStorage.desk.drawer; // "stapler"
