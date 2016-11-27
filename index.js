@@ -11,7 +11,7 @@ var myDog = {
   "tails": 1,
   "friends":["Me", " Son", " Daughter"], 
    Hunter: "Doberman",
-  "the drink": "milk"
+  "drink": "milk"
 };
 
 var nameOurDog = ourDog.name;     
