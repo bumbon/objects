@@ -31,6 +31,14 @@ var breed = breeds[myDog_br];
 //alert(breeds);// "Doberman"
 //---------------------------
 myDog_.onclick = function() {
+    
+	var myNode = document.getElementById('show');
+	
+  var fc = myNode.firstChild;
+  while( fc ) {
+    myNode.removeChild( fc );
+    fc = myNode.firstChild;
+     }
   
   //prop.parentNode.removeChild(arr);
   for (var i in myDog) {
@@ -62,7 +70,25 @@ clear.onclick = function(prop) {
       result = myDog[val];
       return result;
 }
-about.onclick = function(){ alert(propLookup(prompt("Input wthat you want to know - name, drink, friends")));}
+
+about.onclick = function(){ 
+    var inp = prompt("Input wthat you want to know - name, drink, friends");
+    switch (inp) {
+        case 'name':
+             alert(propLookup('name'));
+            break;
+        case 'drink':
+             alert(propLookup('drink'));
+            break;
+        case 'name':
+             alert(propLookup('friends'));
+            break;
+        default:
+           alert("Так не піде!");
+    }
+   
+  
+}
 
 
                                    
