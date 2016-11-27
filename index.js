@@ -9,7 +9,7 @@ var myDog = {
   "name": "July",
   "legs": 4,
   "tails": 1,
-  "friends":["me", "son", "daughter"], 
+  "friends":["Me", " Son", " Daughter"], 
    Hunter: "Doberman",
   "the drink": "milk"
 };
@@ -56,6 +56,15 @@ clear.onclick = function(prop) {
      }
 };
 //--------------------------------
+
+ function propLookup(val) {
+      var result = "";
+      result = myDog[val];
+      return result;
+}
+about.onclick = function(){ alert(propLookup(prompt("Input wthat you want to know - name, drink, friends")));}
+
+
                                    
 /*document.getElementById("myDog_").addEventListener("click",function {
         for (var i in myDog) {
